@@ -12,5 +12,8 @@
     --fs-l: 3.5em;
 
     /* Color */
+    --grey: rgb(170, 167, 167);
     --white: white;
 }
+
+
