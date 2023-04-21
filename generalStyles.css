@@ -16,4 +16,7 @@
     --white: white;
 }
 
-
+@font-face {
+    font-family: 'Lawrence', sans-serif;
+    src: url(./fonts/OPTILawrence.otf);
+}
