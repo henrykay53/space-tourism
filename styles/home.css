@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Lawrence', sans-serif;
+    src: url(./fonts/OPTILawrence.otf);
+}
+
 body, html { 
 
     height: 100%;
@@ -8,47 +13,101 @@ body {
     text-align: center;
 }
 
-.mobile {
-
-    display: none;
+li {
+    word-spacing: .4em;
 }
 
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+/* Mobile styling starts here */
 
-.background{ 
+.mobile-background { 
 
-    /* width: 100%; */
-    height: 100%;
     background-image: url("../assets/home/background-home-mobile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* margin-top: 2em; */
+    height: 100%;
     padding: 2em;
     padding-left: 1em;
-    padding-right: 1em;
-    color: var(--grey) !important;
+    color: var(--grey);
 
 }
 
 .flex {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     align-items: center; 
 }
 
-.home-header {
+.mobile-logo {
+    padding-left: 1em;
+}
 
+.show {
+    display: block;
+}
+
+.mobile-menu {
+
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(1, 1, 40);
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.close {
+    padding-right: 2em;
+    padding-top: 2.2em;
+}
+
+.hide { 
+    display: none;
+}
+
+.mobile-menu ul li {
+
+    margin-top: 4em;
+    list-style: none;
+    text-align: justify;
+    animation: appear .6s ease-in-out;
+    
+}
+
+@keyframes appear {
+
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+
+.home-header {
     margin-top: 3em;
 }
 
 .space {
+
+    font-family: "Lawrence";
     font-size: 5em;
     margin-top: -.1em;
     color: var(--white);
 }
 
 .space-para {
+
+    font-size: 1.2em;
 
     line-height: 1.5em;
     margin-top: -2em;
@@ -58,17 +117,21 @@ body {
 
     display: flex;
     justify-content: center;
-
-    width: 50%;
+    width: 20%;
     margin: 0 auto;
     font-size: 2em;
     color: black;
     background: white;
-    padding: 3em 3em;
+    padding: 3em 4em;
     border-radius: 50%;
-    /* text-align: center; */
-    margin-top: 2em;
+    margin-top: 4em;
 }
+
+/* Mobile styling ends here */
+
+
+
+/* Desktop styling starts here */
 
 .desktop {
     background: url("../assets/home/background-home-desktop.jpg");
@@ -76,43 +139,95 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 
 }
 
 .desktop-logo {
-
     padding-left: 2em;
-}
-
-.desktop-logo::after {
-
-    z-index: 1;
-
-    content: " ";
-    display: block;
-    color: rgb(55, 255, 0);
-    width: 100%;
-    height: 40px;
 }
 
 .desktop-links {
     display: flex;
     gap: 6em;
     justify-content: center;
-    /* background-color: rgb(171, 6, 6);
-    backdrop-filter: blur(50px); */
-
     background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(1px);
-    width: 50%;
+    backdrop-filter: blur(5px);
     list-style: none;
-    
-  
-    /* opacity: 20%; */
-    padding: 2em;
+    padding: 1.6em 8em;
 }
 
-a {
-    text-decoration: none;
-    /* color: var(--white); */
+.desktop-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14em;
+    color: var(--white);
+    margin-top: 18em;
+}
+
+.desktop-home-header {
+
+    font-size: 1em;
+    word-spacing: 1em;
+    text-align: left;
+}
+
+.desktop-space {
+    font-size: 6em;
+    letter-spacing: .1em;
+    text-align: left;
+    margin-top: -.1em;
+}
+
+.desktop-space-para {
+
+    margin-top: -3em;
+    text-align: justify;
+    line-height: 1.5em;
+    color: var(--grey);    
+}
+
+.desktop-explore {
+
+    background: white;
+    padding: 6em;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.5em;
+}
+
+.link:hover::after {
+
+    content: " ";
+    position: relative;
+    display: block;
+    top: 1.5em;
+    height: 3px;
+    background-color: white;
+    
+}
+
+@media screen and (max-width: 1064px)  {
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1065px)  {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+    
 }

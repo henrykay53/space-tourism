@@ -12,22 +12,41 @@
 <body>
 
 
-    <section class="mobile background">
+  
+
+
+    <section class="mobile mobile-background">
 
         
         <header>
             <nav class="flex">
-                <img src="../assets/shared/logo.svg" alt="logo">
-                <img src="../assets/shared/icon-hamburger.svg" alt="hamburger-menu">
+                <img class="mobile-logo" src="../assets/shared/logo.svg" alt="logo">
+                <img id="Open" src="../assets/shared/icon-hamburger.svg" alt="hamburger-menu">
 
-                <!-- <ul>
-                    <li><a href="#Home">00 HOME</a></li>
-                    <li><a href="./Destination.html">01 DESTINATION</a></li>
-                    <li><a href="./Crew.html">02 CREW</a></li>
-                    <li><a href="./Technology.html">03 TECHNOLOGY</a></li>
-                
-                </ul> -->
             </nav>
+
+            <div  id="mobileMenu" class="mobile-menu hide">
+
+                
+               
+      
+                <div>
+                    <ul>
+                        <li><a href="#Home">00 HOME</a></li>
+                        <li><a href="./Destination.html">01 DESTINATION</a></li>
+                        <li><a href="./Crew.html">02 CREW</a></li>
+                        <li><a href="./Technology.html">03 TECHNOLOGY</a></li>
+                
+                    </ul>
+                </div>
+
+                <div>
+                    <img  id="Close" class="close" src="../assets/shared/icon-close.svg" alt="">
+                </div>
+        
+                
+            </div>
+
         </header> 
 
         <p class="home-header">SO, YOU WANT RO TRAVEL TO</p>
@@ -50,36 +69,49 @@
         <header>
             <nav class="flex">
                 <img class="desktop-logo" src="../assets/shared/logo.svg" alt="logo">
+                
 
 
                 <ul class="desktop-links">
-                    <li><a href="#Home">00 HOME</a></li>
-                    <li><a href="./Destination.html">01 DESTINATION</a></li>
-                    <li><a href="./Crew.html">02 CREW</a></li>
-                    <li><a href="./Technology.html">03 TECHNOLOGY</a></li>
+                    <li class="link"><a href="#Home">00 HOME</a></li>
+                    <li class="link"><a href="./Destination.html">01 DESTINATION</a></li>
+                    <li class="link"><a href="./Crew.html">02 CREW</a></li>
+                    <li class="link"><a href="./Technology.html">03 TECHNOLOGY</a></li>
                 
                 </ul>
             </nav>
         </header> 
 
-        <div>
+        <div class="desktop-content">
+
+            <div>
             
-            <p class="home-header">SO, YOU WANT RO TRAVEL TO</p>
-            <h1 class="space">SPACE</h1>
-
-            <P class="space-para">Let's face it; if you want to go to space, you might <br>
-                as well genuinely go to outerspace and not hover <br>
-                kind of on the edge of it. Well sit back and relax <br> because we'll give you a truly out this world <br> experience!
-
-
-            </P>
+                <p class="desktop-home-header">SO, YOU WANT RO TRAVEL TO</p>
+                <h1 class="desktop-space">SPACE</h1>
+    
+                <P class="desktop-space-para">Let's face it; if you want to go to space, you might 
+                    as well <br> genuinely go to outer space and not hover
+                    kind of on the <br> edge of it. Well sit back and relax because we'll give you <br> a truly out this world experience!
+    
+    
+                </P>
+    
+            </div>
+    
+            <div> 
+    
+                <p class="desktop-explore">
+                    EXPLORE
+                </p>
+    
+            </div>
 
         </div>
 
+       
 
-        <p class="explore">
-            EXPLORE
-        </p>
+
+      
 
     </section>
 
@@ -88,4 +120,6 @@
   
     
 </body>
+
+<script src="../main.js"></script>
 </html>
