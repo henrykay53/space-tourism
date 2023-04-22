@@ -16,6 +16,9 @@
     --fs-m: 2em;
     --fs-l: 3.5em;
 
+    --paragraph-color: #a9adc1;
+    --faded-text: #464c56;
+
     /* Color */
     --grey: rgb(170, 167, 167);
     --white: white;
