@@ -27,3 +27,8 @@ hamOpen.addEventListener("click", ()=>  {
     }
 
 })
+
+
+let spaceData = JSON.parse(data.json);
+
+console.log(spaceData.destinations);

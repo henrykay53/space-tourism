@@ -12,23 +12,111 @@
 
 </head>
 <body id="destination">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./Home.html">00 HOME</a></li>
-                <li><a href="#destination">01 DESTINATION</a></li>
-                <li><a href="./Crew.html">02 CREW</a></li>
-                <li><a href="./Technology.html">03 TECHNOLOGY</a></li>
-            
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>
-            DESTINATION
-        </h1>
-    </main>
+    <section class="mobile mobile-background">
+
+        <header>
+            <nav class="flex">
+                <img class="mobile-logo" src="../assets/shared/logo.svg" alt="logo">
+                <img id="Open" src="../assets/shared/icon-hamburger.svg" alt="hamburger-menu">
+    
+            </nav>
+    
+            <div  id="mobileMenu" class="mobile-menu hide">
+    
+    
+                <div>
+                    <ul>
+                        <li><a href="../pages/Home.html">00 HOME</a></li>
+                        <li><a href="./Destination.html">01 DESTINATION</a></li>
+                        <li><a href="./Crew.html">02 CREW</a></li>
+                        <li><a href="./Technology.html">03 TECHNOLOGY</a></li>
+                
+                    </ul>
+                </div>
+    
+                <div>
+                    <img  id="Close" class="close" src="../assets/shared/icon-close.svg" alt="">
+                </div>
+        
+                
+            </div>
+    
+        </header> 
+
+        <div class="name planet-name">
+            Mars
+        </div>
+
+        <div class="mars planet-img">
+
+            
+            <img class="mars-image hide" src="../assets/destination/image-moon.png" alt="moon">
+            <img class="mars-image hide" src="../assets/destination/image-mars.png" alt="mars">
+            <img class="mars-image show" src="../assets/destination/image-europa.png" alt="europa">
+            <img class="mars-image hide" src="../assets/destination/image-titan.png" alt="titan">
+
+        </div>
+
+        <div class="indicator">
+            <button class="grey"></button>
+            <button class="grey"></button>
+            <button class="grey"></button>
+            <button class="grey"></button>
+            
+        </div>
+
+        <div class="mars-content planet-content">
+
+            <div class="mars-para planet-para">
+                Don't forget to pack your hiking boots. You'll need them
+                to tackle Olympus Mons, the tallest planetary mountain in our solar system, It's two and a half times the size of Everest
+                
+            </div>
+
+            <hr>
+
+            <div class="info planet-info">
+
+                <div class="distance">
+                    <p class="avg-distance">
+                        AVG. DISTANCE
+                    </p>
+    
+                    <p class="figure">
+                        225 MILL. KM
+                    </p>
+    
+                </div>
+    
+                <div class="time-travel">
+                    <p class="est-time">
+                        EST. TRAVEL TIME
+                    </p>
+    
+                    <p class="figure">
+                        9 MONTHS
+                    </p>
+    
+                </div>
+                
+            </div>
+
+        </div>
+
+       
+
+
+    </section>
+
+   
+ 
+
+ 
     
 </body>
+
+<script src="../starter-code/data.json"></script>
+
+<script src="../main.js"></script>
 </html>

@@ -1,4 +1,199 @@
-body {
+body, html {
 
-    background: rgb(0, 122, 128);
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+li {
+    word-spacing: .4em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.mobile-background {
+
+    background: url("../assets/destination/background-destination-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 1em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 1em;
+}
+
+.show {
+    display: block;
+}
+
+.mobile-menu {
+
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(1, 1, 40);
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+    /* z-index: 1; */
+}
+
+.close {
+    padding-right: 2em;
+    padding-top: 2.2em;
+}
+
+.hide { 
+    display: none;
+}
+
+.mobile-menu ul li {
+
+    margin-top: 4em;
+    list-style: none;
+    text-align: justify;
+    animation: appear .6s ease-in-out;
+    
+}
+
+@keyframes appear {
+
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+
+
+
+.name {
+    display: flex;
+    
+ 
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: -1.6em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    z-index: 1;
+
+}
+
+.mars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.mars-image {
+    align-self: center;
+    width: 80%;
+}
+
+.indicator {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    /* background: yellow; */
+
+}
+
+.grey {
+    
+    padding: .2em 1.2em;
+    background: grey;
+    border: 0 solid transparent;
+    border-radius: 4em;
+    margin-top: 1.2em;
+}
+
+.grey:hover {
+    background: white;
+}
+
+.mars-content {
+    line-height: 2em;
+    text-align: center;
+    margin-top: 2em;
+    /* animation: appear 2s; */
+}
+
+.name {
+    animation: emerge 2s ease-in;
+}
+
+
+.mars-para {
+    margin-bottom: 2em;
+    animation: emerge 1.2s ease-in;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes emerge {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.avg-distance, .est-time {
+    font-size: .6em;
+    color: grey;
+    animation: appearLeft .6s ease-in;
+}
+
+.figure {
+    animation: appearRight .6s ease-in;
+}
+
+@keyframes appearRight {
+
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes appearLeft {
+
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+
+.figure {
+    font-size: 1.5em;
+    margin-top: -.8em;
 }
