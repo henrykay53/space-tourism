@@ -28,7 +28,12 @@ hamOpen.addEventListener("click", ()=>  {
 
 })
 
+// Will be needed
+// "./assets/destination/image-moon.png"
 
-let spaceData = JSON.parse(data.json);
 
-console.log(spaceData.destinations);
+
+
+
+
+

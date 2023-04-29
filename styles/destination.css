@@ -1,6 +1,6 @@
 body, html {
 
-    height: 100%;
+    height: 110%;
     margin: 0;
     color: white;
 }
@@ -83,8 +83,6 @@ a {
 
 .name {
     display: flex;
-    
- 
     justify-content: center;
     font-size: 2rem;
     margin-top: 1em;
@@ -141,12 +139,18 @@ a {
     animation: emerge 2s ease-in;
 }
 
+.info {
+    display: block;
+    text-align: center;
+}
 
-.mars-para {
+
+.planet-para {
     margin-bottom: 2em;
     animation: emerge 1.2s ease-in;
     font-weight: bold;
     color: white;
+    text-align: justify;
 }
 
 @keyframes emerge {
@@ -197,3 +201,126 @@ a {
     font-size: 1.5em;
     margin-top: -.8em;
 }
+
+
+.hide {
+    display: none;
+}
+
+
+.desktop {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 100%;
+}
+
+
+.desktop-logo {
+    padding-left: 2em;
+}
+
+.desktop-links {
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    list-style: none;
+    padding: 1.6em 8em;
+}
+
+.desktop-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14em;
+    color: var(--white);
+    margin-top: 18em;
+}
+
+.desktop-home-header {
+
+    font-size: 1em;
+    word-spacing: 1em;
+    text-align: left;
+}
+
+.desktop-space {
+    font-size: 6em;
+    letter-spacing: .1em;
+    text-align: left;
+    margin-top: -.1em;
+}
+
+.desktop-space-para {
+
+    margin-top: -3em;
+    text-align: justify;
+    line-height: 1.5em;
+    color: var(--grey);    
+}
+
+.desktop-explore {
+
+    background: white;
+    padding: 6em;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.5em;
+}
+
+.link:hover::after {
+
+    content: " ";
+    position: relative;
+    display: block;
+    top: 1.5em;
+    height: 3px;
+    background-color: white;
+    
+}
+
+.pick {
+
+    display: flex;
+    gap: 1em;
+    margin-left: 30em;
+    margin-top: 5em;
+    letter-spacing: .2em;
+}
+
+.pick-num {
+    color: grey;
+    
+}
+
+
+.desktopMobileContent {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 5rem;
+  
+}
+
+.planet-links {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+.planet-link:hover::after {
+
+    content: " ";
+    position: relative;
+    display: block;
+    top: .7em;
+    height: 3px;
+    background-color: white;
+    
+}
+
