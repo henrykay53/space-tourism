@@ -19,10 +19,10 @@ fetch("../starter-code/data.json")
 
 
 
-        // console.log( mars.textContent = data.destinations[1].name);
-        // console.log( mars.textContent = data.destinations[1].description);
-        // console.log( mars.textContent = data.destinations[1].distance);
-        // console.log( mars.textContent = data.destinations[1].travel);
+        console.log( planetName.textContent = data.destinations[1].name);
+        console.log( planetDetail.textContent = data.destinations[1].description);
+        console.log( planetDistance.textContent = data.destinations[1].distance);
+        console.log( planetTime.textContent = data.destinations[1].travel);
 
         // moon.textContent = data.destinations[1].name;
 
