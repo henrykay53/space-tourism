@@ -26,10 +26,9 @@ hamOpen.addEventListener("click", ()=>  {
         })
     }
 
-})
+});
 
-// Will be needed
-// "./assets/destination/image-moon.png"
+
 
 
 
