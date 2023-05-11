@@ -1,17 +1,8 @@
 body, html {
 
-    height: 110%;
+    height: 100%;
     margin: 0;
     color: white;
-}
-
-li {
-    word-spacing: .4em;
-}
-
-a {
-    text-decoration: none;
-    color: var(--white);
 }
 
 .mobile-background {
@@ -46,7 +37,6 @@ a {
     color: var(--white);
     height: 100%;
     width: 100%;
-    /* z-index: 1; */
 }
 
 .close {
@@ -79,8 +69,6 @@ a {
     
 }
 
-
-
 .mobile-name {
     display: flex;
     justify-content: center;
@@ -111,8 +99,6 @@ a {
     display: flex;
     gap: 2em;
     justify-content: center;
-    /* background: yellow; */
-
 }
 
 .grey {
@@ -170,6 +156,11 @@ a {
 }
 
 .figure {
+    font-size: 1.5em;
+    margin-top: -.8em;
+}
+
+.figure {
     animation: appearRight .6s ease-in;
 }
 
@@ -197,16 +188,14 @@ a {
     
 }
 
-.figure {
-    font-size: 1.5em;
-    margin-top: -.8em;
-}
-
-
 .hide {
     display: none;
 }
 
+/* mobile styling ends here */
+
+
+/* Desktop styling starts */
 
 .desktop {
     background-image: url("../assets/destination/background-destination-desktop.jpg");
@@ -215,7 +204,6 @@ a {
     background-position:center ;
     height: 100%;
 }
-
 
 .desktop-logo {
     padding-left: 2em;
@@ -231,6 +219,33 @@ a {
     padding: 1.6em 8em;
 }
 
+li {
+    word-spacing: .4em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 1em;
+}
+
+.link:hover::before {
+
+    content: " ";
+    position: relative;
+    display: block;
+    top: 2.7em;
+    height: 2px;
+    background-color: white;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .desktop-content {
     display: flex;
     justify-content: center;
@@ -238,48 +253,6 @@ a {
     gap: 14em;
     color: var(--white);
     margin-top: 18em;
-}
-
-.desktop-home-header {
-
-    font-size: 1em;
-    word-spacing: 1em;
-    text-align: left;
-}
-
-.desktop-space {
-    font-size: 6em;
-    letter-spacing: .1em;
-    text-align: left;
-    margin-top: -.1em;
-}
-
-.desktop-space-para {
-
-    margin-top: -3em;
-    text-align: justify;
-    line-height: 1.5em;
-    color: var(--grey);    
-}
-
-.desktop-explore {
-
-    background: white;
-    padding: 6em;
-    border-radius: 50%;
-    color: black;
-    font-size: 1.5em;
-}
-
-.link:hover::after {
-
-    content: " ";
-    position: relative;
-    display: block;
-    top: 1.5em;
-    height: 3px;
-    background-color: white;
-    
 }
 
 .pick {
@@ -296,7 +269,6 @@ a {
     
 }
 
-
 .desktopMobileContent {
 
     display: flex;
@@ -304,7 +276,6 @@ a {
     align-items: center;
     gap: 20rem;
     margin-top: 10rem;
-  
 }
 
 .planet-links  {
@@ -317,8 +288,6 @@ a {
     letter-spacing: .2em;
 }
 
-
-
 .planet-link:hover::after {
 
     content: " ";
@@ -330,8 +299,6 @@ a {
     
 }
 
-
-
 .hide {
     display: none;
 }
@@ -339,7 +306,6 @@ a {
 .name {
 
     text-transform: uppercase;
-
     margin-top: -.6em;
     font-size: 5em;
  
@@ -359,3 +325,5 @@ a {
     color: silver;
   
 }
+
+/* Desktop styling ends here */

@@ -1,9 +1,77 @@
-body {
-
-    background: rgb(128, 0, 6);
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
 @font-face {
     font-family: 'Lawrence', sans-serif;
     src: url(./fonts/OPTILawrence.otf);
 }
+
+
+.mobile {
+    background: url("../assets/crew/background-crew-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: none;
+
+}
+
+
+.desktop {
+
+    background: url("../assets/crew/background-crew-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.desktop-logo {
+    padding-left: 2em;
+}
+
+.desktop-links {
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    list-style: none;
+    padding: 1.6em 8em;
+}
+
+li {
+    word-spacing: .4em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 1em;
+}
+
+
+.link:hover::before {
+
+    content: " ";
+    position: relative;
+    display: block;
+    top: 2.7em;
+    height: 2px;
+    background-color: white;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+

@@ -13,14 +13,7 @@ body {
     text-align: center;
 }
 
-li {
-    word-spacing: .4em;
-}
 
-a {
-    text-decoration: none;
-    color: var(--white);
-}
 /* Mobile styling starts here */
 
 .mobile-background { 
@@ -81,6 +74,8 @@ a {
     
 }
 
+/* Mobile menu animation */
+
 @keyframes appear {
 
     0% {
@@ -108,7 +103,6 @@ a {
 .space-para {
 
     font-size: 1.2em;
-
     line-height: 1.5em;
     margin-top: -2em;
 }
@@ -139,7 +133,6 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* overflow: hidden; */
 
 }
 
@@ -155,8 +148,37 @@ a {
     backdrop-filter: blur(5px);
     list-style: none;
     padding: 1.6em 8em;
-    margin-top: 2em;
 }
+
+li {
+    word-spacing: .4em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 1em;
+}
+
+
+.link:hover::before {
+
+    content: " ";
+    position: relative;
+    display: block;
+    top: 2.7em;
+    height: 2px;
+    background-color: white;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 .desktop-content {
     display: flex;
@@ -192,24 +214,32 @@ a {
 .desktop-explore {
 
     background: white;
-    padding: 6em;
+    padding: 4em 3em;
     border-radius: 50%;
     color: black;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
-.link:hover::after {
+.link {
+    position: relative;
+}
+
+.links:hover::before {
 
     content: " ";
     position: relative;
     display: block;
-    top: 1.5em;
-    height: 3px;
+    top: 2.7em;
+    height: 2px;
     background-color: white;
     
 }
 
-@media screen and (max-width: 1064px)  {
+/* Desktop styling ends here */
+
+
+/* Media query for mobile at screen width <= 1064 */
+@media screen and (width <= 1064px)  {
 
     .mobile {
         display: block;
@@ -221,7 +251,9 @@ a {
     
 }
 
-@media screen and (min-width: 1065px)  {
+/* Media query for desktop at screen width >= 1065 */
+
+@media screen and (width >= 1065px)  {
 
     .mobile {
         display: none;
@@ -233,7 +265,9 @@ a {
     
 }
 
-@media screen and (max-height: 667px ) {
+/* Width to set the dimensions of explore component of mobile view */
+
+@media screen and (height <= 667px ) {
 
     .explore {
         padding: 4em;
