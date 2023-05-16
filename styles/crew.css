@@ -41,7 +41,8 @@ body, html {
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     list-style: none;
-    padding: 1.6em 8em;
+    padding: 2em 8em;
+    margin-top: 0;
 }
 
 li {
@@ -52,7 +53,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding-top: 1em;
 }
 
 
@@ -61,7 +61,7 @@ li {
     content: " ";
     position: relative;
     display: block;
-    top: 2.7em;
+    top: 3em;
     height: 2px;
     background-color: white;
     

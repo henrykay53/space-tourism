@@ -2,28 +2,26 @@ fetch("../starter-code/data.json")
     .then(res => res.json())
     .then(data => {
 
-        let planetName = document.createElement('p');
-        let planetDetail = document.createElement('p');
-        let planetDistance = document.createElement('p');
-        let planetTime = document.createElement('p');
-
-    
-        console.log( planetName.textContent = data.destinations[1].name);
-        console.log( planetDetail.textContent = data.destinations[1].description);
-        console.log( planetDistance.textContent = data.destinations[1].distance);
-        console.log( planetTime.textContent = data.destinations[1].travel);
+        let moon= document.createElement('p');
+        let moonDetail = document.createElement('p');
+        let moonDistance = document.createElement('p');
+        let moonTime = document.createElement('p');
+        let horizontalLine = document.createElement("hr");
 
 
-        planetName.textContent = data.destinations[0].name;
-        planetDetail.textContent = data.destinations[0].description;
-        planetDistance.textContent = data.destinations[0].distance;
-        planetTime.textContent = data.destinations[0].travel;
 
 
-        const name = document.querySelector('.name');
-        const detail = document.querySelector(".planet-para");
-        const distance = document.querySelector(".distance-figure");
-        const time = document.querySelector(".time-figure");
+        moon.textContent = data.destinations[0].name;
+        moonDetail.textContent = data.destinations[0].description;
+        moonDistance.textContent = data.destinations[0].distance;
+        moonTime.textContent = data.destinations[0].travel;
+
+
+        const moonName = document.querySelector('.moon');
+        const moonPara = document.querySelector(".moon-para");
+        const moonDis = document.querySelector(".moon-distance");
+        const moonT = document.querySelector(".moon-time");
+        const line = document.querySelector(".line");
    
 
         function elementsAppend(targetedElement, chiltToAppend) {
@@ -32,10 +30,11 @@ fetch("../starter-code/data.json")
         }
 
 
-        elementsAppend(name, planetName);
-        elementsAppend(detail, planetDetail);
-        elementsAppend(distance, planetDistance);
-        elementsAppend(time, planetTime);
+        elementsAppend(moonName, moon);
+        elementsAppend(moonPara, moonDetail);
+        elementsAppend(moonDis, moonDistance);
+        elementsAppend(moonT, moonTime);
+        elementsAppend(line, horizontalLine);
 
 
     });
@@ -50,6 +49,8 @@ fetch("../starter-code/data.json")
         let marsDetail = document.createElement('p');
         let marsDistance = document.createElement('p');
         let marsTime = document.createElement('p');
+        let horizontalLine = document.createElement("hr");
+
 
         
         mars.textContent = data.destinations[1].name;
@@ -63,6 +64,8 @@ fetch("../starter-code/data.json")
         const marsPara = document.querySelector(".mars-para");
         const marsDis = document.querySelector(".mars-distance");
         const marsT = document.querySelector(".mars-time");
+        const line = document.querySelector(".line");
+
 
 
         function elementsAppend(targetedElement, chiltToAppend) {
@@ -75,6 +78,9 @@ fetch("../starter-code/data.json")
         elementsAppend(marsPara, marsDetail);
         elementsAppend(marsDis, marsDistance);
         elementsAppend(marsT, marsTime);
+        elementsAppend(line, horizontalLine);
+
+        
 
     })
 
@@ -88,6 +94,8 @@ fetch("../starter-code/data.json")
         let europaDetail = document.createElement('p');
         let europaDistance = document.createElement('p');
         let europaTime = document.createElement('p');
+        let horizontalLine = document.createElement("hr");
+
 
         
         europa.textContent = data.destinations[2].name;
@@ -101,6 +109,8 @@ fetch("../starter-code/data.json")
         const europaPara = document.querySelector(".europa-para");
         const europaDis = document.querySelector(".europa-distance");
         const europaT = document.querySelector(".europa-time");
+        const line = document.querySelector(".line");
+
 
 
         function elementsAppend(targetedElement, chiltToAppend) {
@@ -113,6 +123,8 @@ fetch("../starter-code/data.json")
         elementsAppend(europaPara, europaDetail);
         elementsAppend(europaDis, europaDistance);
         elementsAppend(europaT, europaTime);
+        elementsAppend(line, horizontalLine);
+
 
     })
 
@@ -126,6 +138,8 @@ fetch("../starter-code/data.json")
         let titanDetail = document.createElement('p');
         let titanDistance = document.createElement('p');
         let titanTime = document.createElement('p');
+        let horizontalLine = document.createElement("hr");
+
 
         
         titan.textContent = data.destinations[3].name;
@@ -139,6 +153,8 @@ fetch("../starter-code/data.json")
         const titanPara = document.querySelector(".titan-para");
         const titanDis = document.querySelector(".titan-distance");
         const titanT = document.querySelector(".titan-time");
+        const line = document.querySelector(".line");
+
 
 
         function elementsAppend(targetedElement, chiltToAppend) {
@@ -151,15 +167,18 @@ fetch("../starter-code/data.json")
         elementsAppend(titanPara, titanDetail);
         elementsAppend(titanDis, titanDistance);
         elementsAppend(titanT, titanTime);
+        elementsAppend(line, horizontalLine);
+
 
     })
 
-    let moonContent = document.getElementsByClassName("moonContent");
-    let marsContent = document.getElementsByClassName("marsContent");
-    let europaContent = document.getElementsByClassName("titanContent");
-    let titanContent = document.getElementsByClassName("europaContent");
 
-    console.log(titanContent);
+    let moonContent = document.getElementById("moonContent");
+    let marsContent = document.getElementById("marsContent");
+    let europaContent = document.getElementById("europaContent");
+    let titanContent = document.getElementById("titanContent");
+
+   
 
 
     let moonLink = document.querySelector(".moon-link");
@@ -169,63 +188,154 @@ fetch("../starter-code/data.json")
 
 
     moonLink.addEventListener("click", ()=> {
+       
 
-       if (moonContent.classList.contains("hide")) {
-
-        moonContent.classList.add("show");
+        moonContent.classList.remove("hide");
+        moonContent.classList.add("show")
         marsContent.classList.add("hide");
-        titanContent.classList.add("hide");
+        marsContent.classList.remove("show");
         europaContent.classList.add("hide");
+        europaContent.classList.remove("show");
+        titanContent.classList.add("hide");
+        titanContent.classList.remove("show");
+
+    //    if (moonContent.classList.contains("hide")) {
+
+    //     alert(moonContent.classList)
+
+    //     moonContent.classList.add("show");
+    //     marsContent.classList.add("hide");
+    //     titanContent.classList.add("hide");
+    //     europaContent.classList.add("hide");
         
-       };
+    //    };
 
     });
 
     marsLink.addEventListener("click", ()=> {
-
-       if (marsContent.classList.contains("hide")) {
-
-        marsContent.classList.remove("hide");
-        marsContent.classList.add("show");
-
-        moonContent.classList.add("hide");
-        titanContent.classList.add("hide");
-        europaContent.classList.add("hide");
         
-       };
+    
 
+        moonContent.classList.remove("show");
+        moonContent.classList.add("hide")
+        marsContent.classList.add("show");
+        marsContent.classList.remove("hide");
+        europaContent.classList.add("hide");
+        europaContent.classList.remove("show");
+        titanContent.classList.add("hide");
+        titanContent.classList.remove("show");
+
+    //    if (moonContent.classList.contains("hide")) {
+
+    //     alert(moonContent.classList)
+
+    //     moonContent.classList.add("show");
+    //     marsContent.classList.add("hide");
+    //     titanContent.classList.add("hide");
+    //     europaContent.classList.add("hide");
+        
+    //    };
+
+    });
+
+
+    europaLink.addEventListener("click", ()=> {
+        
+      
+
+        moonContent.classList.remove("show");
+        moonContent.classList.add("hide")
+        marsContent.classList.add("hide");
+        marsContent.classList.remove("show");
+        europaContent.classList.remove("hide");
+        europaContent.classList.add("show");
+        titanContent.classList.add("hide");
+        titanContent.classList.remove("show");
+
+    //    if (moonContent.classList.contains("hide")) {
+
+    //     alert(moonContent.classList)
+
+    //     moonContent.classList.add("show");
+    //     marsContent.classList.add("hide");
+    //     titanContent.classList.add("hide");
+    //     europaContent.classList.add("hide");
+        
+    //    };
 
     });
 
     titanLink.addEventListener("click", ()=> {
-
-        if (titanContent.classList.contains("hide")) {
- 
-         titanContent.classList.remove("hide");
-         titanContent.classList.add("show");
- 
-         moonContent.classList.add("hide");
-         marsContent.classList.add("hide");
-         europaContent.classList.add("hide");
-         
-        };
- 
-    });
-
-    europaLink.addEventListener("click", ()=> {
-
-       if (europaContent.classList.contains("hide")) {
-
-        europaContent.classList.remove("hide");
-        europaContent.classList.add("show");
-
-        moonContent.classList.add("hide");
-        marsContent.classList.add("hide");
-        titanContent.classList.add("hide");
         
-       };
+        
+
+        moonContent.classList.remove("show");
+        moonContent.classList.add("hide")
+        marsContent.classList.add("hide");
+        marsContent.classList.remove("show");
+        europaContent.classList.add("hide");
+        europaContent.classList.remove("show");
+        titanContent.classList.add("show");
+        titanContent.classList.remove("hide");
+
+    //    if (moonContent.classList.contains("hide")) {
+
+    //     alert(moonContent.classList)
+
+    //     moonContent.classList.add("show");
+    //     marsContent.classList.add("hide");
+    //     titanContent.classList.add("hide");
+    //     europaContent.classList.add("hide");
+        
+    //    };
 
     });
+
+    // marsLink.addEventListener("click", ()=> {
+
+    //    if (marsContent.classList.contains("hide")) {
+
+    //     marsContent.classList.remove("hide");
+    //     marsContent.classList.add("show");
+
+    //     moonContent.classList.add("hide");
+    //     titanContent.classList.add("hide");
+    //     europaContent.classList.add("hide");
+        
+    //    };
+
+
+    // });
+
+    // titanLink.addEventListener("click", ()=> {
+
+    //     if (titanContent.classList.contains("hide")) {
+ 
+    //      titanContent.classList.remove("hide");
+    //      titanContent.classList.add("show");
+ 
+    //      moonContent.classList.add("hide");
+    //      marsContent.classList.add("hide");
+    //      europaContent.classList.add("hide");
+         
+    //     };
+ 
+    // });
+
+    // europaLink.addEventListener("click", ()=> {
+
+    //    if (europaContent.classList.contains("hide")) {
+
+    //     europaContent.classList.remove("hide");
+    //     europaContent.classList.add("show");
+
+    //     moonContent.classList.add("hide");
+    //     marsContent.classList.add("hide");
+    //     titanContent.classList.add("hide");
+        
+    //    };
+
+    // });
 
  
 

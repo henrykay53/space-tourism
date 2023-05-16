@@ -16,7 +16,7 @@
 </head>
 <body id="destination">
 
-    <!-- <section class=" hide mobile mobile-background">
+    <section class="hide mobile mobile-background">
 
         <header>
             <nav class="flex">
@@ -54,11 +54,8 @@
 
             </div>
 
-            <div class="mars planet-img">
-
-            
-                <img class="mars-image" src="../assets/destination/image-moon.png" alt="moon">
-         
+            <div class="planet-img">
+                <img class="planet-image" src="../assets/destination/image-moon.png" alt="moon">
             </div>
     
             <div class="indicator">
@@ -290,12 +287,12 @@
             
         </div>
         
-    </section> -->
+    </section>
 
     <section class="desktop">
 
         <header>
-            <nav class="flex">
+            <nav class="flex bigNav">
                 <img class="desktop-logo" src="../assets/shared/logo.svg" alt="logo">
                 
 
@@ -316,46 +313,54 @@
             <p>PICK YOUR DESTINATION</p>
         </div>
 
-        <div class="show desktopMobileContent moonContent" id="moon">
-            <div>
+        <div id="link">
+            <ul class="planet-links">
+                <li class="planet-link moon-link"><a id="moonlink" href="#moon">MOON</a></li>
+                <li class="planet-link mars-link"><a id="marslink" href="#planetMars">MARS</a></li>
+                <li class="planet-link europa-link"><a id="europalink" href="#europa">EUROPA</a></li>
+                <li class="planet-link titan-link"><a id="titanlink" href="#titan">TITAN</a></li>
+            
+           
+            </ul>
+        </div>        
+
+        <div class="show desktopContent" id="moonContent">
+            <div class="planet-img">
                 <img src="../assets/destination/image-moon.png" alt="moon">
             </div>
 
             <div>
 
-                <div>
-                    <ul class="planet-links">
-                        <li class="planet-link moon-link"><a href="#moon">MOON</a></li>
-                        <li class="planet-link mars-link"><a href="#planetMars">MARS</a></li>
-                        <li class="planet-link europa-link"><a href="#europa">EUROPA</a></li>
-                        <li class="planet-link titan-link"><a href="#titan">TITAN</a></li>
-                   
-                    </ul>
-                </div>
+               
 
                 <div>
 
-                    <div class="name">
+                    <div class="name moon">
 
                     </div>
                    
-                    <div class="desktop-planet-para planet-para">
+                    <div class="moon-para desktop-planet-para">
 
                     </div>
 
-                    <hr>
+                    <div class="line">
+
+                    </div>
+
+                    <!-- <hr> -->
 
                     <div class="planet-stats">
                         <div>
-                            AVG DISTANCE
-                            <div class="distance-figure">
+                           
+                            <div class="dis"> AVG DISTANCE</div>
+                            <div class="moon-distance planet-distance">
 
                             </div>
                         </div>
 
                         <div>
-                            AVG TIME
-                            <div class="time-figure">
+                            <div class="time"> AVG TIME</div>
+                            <div class="moon-time planet-time">
                                 
                             </div>
                         </div>
@@ -368,46 +373,43 @@
            
         </div>
 
-
-        <div class="hide desktopMobileContent marsContent" id="planetMars">
-            <div>
+        <div class="hide desktopContent" id="marsContent">
+            <div class="planet-img">
                 <img src="../assets/destination/image-mars.webp" alt="mars">
             </div>
 
             <div>
 
                 <div>
-                    <ul class="planet-links">
-                        <li class="planet-link moon-link"><a href="#moon">MOON</a></li>
-                        <li class="planet-link mars-link"><a href="#planetMars">MARS</a></li>
-                        <li class="planet-link europa-link"><a href="#europa">EUROPA</a></li>
-                        <li class="planet-link titan-link"><a href="#titan">TITAN</a></li>
-                   
-                    </ul>
-                </div>
-
-                <div>
                     <div class="mars name">
 
                     </div>
 
-                    <div class="mars-para">
+                    <div class="mars-para desktop-planet-para">
 
                     </div>
 
-                    <hr>
+                    <div class="line">
+
+                    </div>
 
                     <div class="planet-stats">
                         <div>
-                            AVG DISTANCE
-                            <div class="mars-distance">
+                            <div class="dis">
+                                AVG DISTANCE
+                            </div>
+                            
+                            <div class="mars-distance planet-distance">
 
                             </div>
                         </div>
 
                         <div>
-                            AVG TIME
-                            <div class="mars-time">
+                           
+                            <div class="time">
+                                AVG TIME
+                            </div>
+                            <div class="mars-time planet-time">
 
                             </div>
                         </div>
@@ -420,47 +422,39 @@
            
         </div>
 
-        <div class="hide desktopMobileContent europaContent">
-            <div>
+        <div class="hide desktopContent " id="europaContent">
+            <div class="planet-img">
                 <img src="../assets/destination/image-europa.webp" alt="europa">
             </div>
 
             <div>
 
                 <div>
-                    <ul class="planet-links">
-                        <li class="planet-link moon-link"><a href="">MOON</a></li>
-                        <li class="planet-link mars-link"><a href="">MARS</a></li>
-                        <li class="planet-link europa-link"><a href="">EUROPA</a></li>
-                        <li class="planet-link titan-link"><a href="">TITAN</a></li>
-                   
-                    </ul>
-                </div>
-
-                <div>
                     <div class="europa name">
 
                     </div>
 
-                    <p class="europa-para">
+                    <p class="europa-para desktop-planet-para">
 
                     </p>
 
-                    <hr>
+                    <div class="line"></div>
 
                     <div class="planet-stats">
                         <div>
                             AVG DISTANCE
+                            <div class="dis"></div>
 
-                            <div class="europa-distance">
+                            <div class="europa-distance planet-distance">
 
                             </div>
                            
                         </div>
 
                         <div>
-                            AVG TIME
-                            <div class="europa-time">
+                            <div class="time"> AVG TIME</div>
+                           
+                            <div class="europa-time planet-time">
 
                             </div>
                            
@@ -474,46 +468,38 @@
            
         </div>
 
-        <div class="hide desktopMobileContent titanContent">
+        <div class="hide desktopContent" id="titanContent">
 
-            <div>
+            <div class="planet-img">
                 <img src="../assets/destination/image-titan.webp" alt="titan">
             </div>
 
             <div>
 
-                <div>
-                    <ul class="planet-links">
-                        <li class="planet-link moon-link"><a href="">MOON</a></li>
-                        <li class="planet-link mars-link"><a href="">MARS</a></li>
-                        <li class="planet-link europa-link"><a href="">EUROPA</a></li>
-                        <li class="planet-link titan-link"><a href="">TITAN</a></li>
-                   
-                    </ul>
-                </div>
 
                 <div>
                     <div class="titan name">
 
                     </div>
 
-                    <div class="titan-para">
+                    <div class="titan-para desktop-planet-para">
                         
                     </div>
 
-                    <hr>
+                    <div class="line"></div>
 
                     <div class="planet-stats">
                         <div>
-                            AVG DISTANCE
-                            <div class="titan-distance">
+                           
+                            <div class="dis"> AVG DISTANCE</div>
+                            <div class="titan-distance planet-distance">
 
                             </div>
                         </div>
 
                         <div>
-                            AVG TIME
-                            <div class="titan-time">
+                            <div class="time">AVG TIME</div>
+                            <div class="titan-time planet-time">
 
                             </div>
                         </div>
