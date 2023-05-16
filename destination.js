@@ -21,7 +21,7 @@ fetch("../starter-code/data.json")
         const moonPara = document.querySelector(".moon-para");
         const moonDis = document.querySelector(".moon-distance");
         const moonT = document.querySelector(".moon-time");
-        const line = document.querySelector(".line");
+        const line = document.querySelector(".moon-line");
    
 
         function elementsAppend(targetedElement, chiltToAppend) {
@@ -64,7 +64,7 @@ fetch("../starter-code/data.json")
         const marsPara = document.querySelector(".mars-para");
         const marsDis = document.querySelector(".mars-distance");
         const marsT = document.querySelector(".mars-time");
-        const line = document.querySelector(".line");
+        const line = document.querySelector(".mars-line");
 
 
 
@@ -109,7 +109,7 @@ fetch("../starter-code/data.json")
         const europaPara = document.querySelector(".europa-para");
         const europaDis = document.querySelector(".europa-distance");
         const europaT = document.querySelector(".europa-time");
-        const line = document.querySelector(".line");
+        const line = document.querySelector(".europa-line");
 
 
 
@@ -153,7 +153,7 @@ fetch("../starter-code/data.json")
         const titanPara = document.querySelector(".titan-para");
         const titanDis = document.querySelector(".titan-distance");
         const titanT = document.querySelector(".titan-time");
-        const line = document.querySelector(".line");
+        const line = document.querySelector(".titan-line");
 
 
 
