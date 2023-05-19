@@ -85,7 +85,7 @@ body, html {
 
     display: flex;
     justify-content: center;
-    animation: emerge 2s ease-in;
+    animation: emerge 2s ease-out;
 }
 
 .indicator {
@@ -270,16 +270,16 @@ a {
     text-decoration: none;
 }
 
-.desktop-content {
+/* .desktop-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14em;
     color: var(--white);
-    margin-top: 18em;
-}
+    margin-top: 15em;
+} */
 
-.pick {
+.pageDetails {
 
     display: flex;
     gap: 1em;
@@ -299,7 +299,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    margin-top: -2rem;
+    margin-top: -4rem;
 }
 
 
@@ -309,6 +309,7 @@ a {
     gap: 1em;
     font-size: .8em;
     margin-left: -16em;
+    margin-top: -6em;
     list-style: none;
     /* color: grey; */
     letter-spacing: .2em;
@@ -364,7 +365,7 @@ a {
     gap: 9em;
     color: silver;
     padding-top: 1em;
-    animation: emerge 5s ease-out;
+    animation: emerge 2s ease-out;
   
 }
 

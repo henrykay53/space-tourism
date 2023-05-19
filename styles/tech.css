@@ -1,8 +1,6 @@
 body, html {
-
     height: 100%;
     margin: 0;
-
 }
 
 .mobile {
@@ -48,18 +46,16 @@ body, html {
 }
 
 .mobile-menu ul li {
-
     margin-top: 4em;
     list-style: none;
     text-align: justify;
     animation: appear .6s ease-in-out;
-    
 }
 
 @keyframes appear {
 
     0% {
-        transform: translateX(-200px);
+        transform: translateX(-300px);
     }
 
     100% {
@@ -68,11 +64,21 @@ body, html {
     
 }
 
+@keyframes pageDetail {
+
+    0% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
 
 .techImages {
     width: 100%;
 }
-
 
 .desktop {
 
@@ -109,7 +115,6 @@ li {
     align-items: center;
 }
 
-
 .link:hover::before {
 
     content: " ";
@@ -118,7 +123,6 @@ li {
     top: 3em;
     height: 2px;
     background-color: white;
-    
 }
 
 a {
@@ -126,27 +130,46 @@ a {
     text-decoration: none;
 }
 
-.indicator {
+.pageDetails {
     display: flex;
-    gap: 1em;
+    gap: 2em;
+    /* font-size: 1.3em; */
+    word-spacing: .2em;
+    letter-spacing: .2em;
+    margin-left: 25em;
+    margin-top: 5em;
+    animation: pageDetail 2s ease-in-out;
 }
 
+.pageNum {
+    color: grey;
+}
+
+.pageText {
+    color: white;
+}
+
+.indicator {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
 
 .indicator .grey {
 
     color: white;
-    padding: 1.6em;
+    padding: 1.8em;
     border-radius: 50%;
     border: .1em solid white;
     background: transparent;
 
 }
 
-.grey:active {
-
+.grey.active {
     background: white;
     color: black;
-
 }
 
 .grey:hover {
@@ -154,7 +177,64 @@ a {
     color: black;
 }
 
+@keyframes emerge {
+    0% {
+        opacity: 0%;
+    }
 
+    100% {
+        opacity: 100%;
+    }
+}
+
+.pageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 5em;
+    padding-left: 20em;
+    padding-right: 20em;
+  
+}
+
+.animate {
+    animation: emerge 2s ease-out;
+}
+
+.techDetails {
+    color: white;
+    width: 500px;
+}
+
+.detailsHeading {
+    color: grey;
+    font-size: .8em;
+}
+
+.techDetailsOneDesktop, .techDetailsTwoDesktop, .techDetailsThreeDesktop {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.techName {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-top: -.8em;
+}
+
+.techDetails {
+    line-height: 2em;
+    margin-top: -.8em;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* media queries */
 
 @media screen and (width <= 1064px)  {
 
@@ -165,9 +245,7 @@ a {
     .desktop {
         display: none;
     }
-    
-   
-    
+      
 }
 
 /* Media query for desktop at screen width >= 1065 */
@@ -183,5 +261,3 @@ a {
     }
     
 }
-
-

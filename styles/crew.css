@@ -76,16 +76,17 @@ body, html {
 
 .indicator {
     display: flex;
-    gap: 2em;
     justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
 }
 
 .grey {
     
-    padding: .2em 1.2em;
+    padding: .8em .8em;
     background: grey;
     border: 0 solid transparent;
-    border-radius: 4em;
+    border-radius: 2em;
     margin-top: 1.2em;
 }
 
@@ -93,162 +94,20 @@ body, html {
     background: white;
 }
 
+.active {
+    background: white;
+}
+
 .crewImage {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .desktop {
-
     background: url("../assets/crew/background-crew-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-
 }
 
 .desktop-logo {
@@ -276,7 +135,6 @@ li {
     align-items: center; 
 }
 
-
 .link:hover::before {
 
     content: " ";
@@ -294,6 +152,108 @@ a {
 }
 
 
+/* Animations */
+
+
+@keyframes emerge {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes pageDetail {
+
+    0% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes imageAnimation {
+
+    0% {
+        transform: translateX(800px);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    
+}
+
+.crewImg {
+    animation: imageAnimation .6s ease-out;
+}
+
+.pageDetail {
+
+    display: flex;
+    gap: 1em;
+    word-spacing: 1em;
+    margin-top: 10em;
+    animation: pageDetail .8s ease-out;
+}
+
+.num {
+    color: grey;
+}
+
+.text {
+    color: white;
+}
+
+.crewContent {
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6em;
+    margin-top: 2em;
+}
+
+.memberInfo {
+
+    width: 500px;
+    color: white;
+    animation: emerge 2s ease-in-out;
+}
+
+.roles {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: grey;
+}
+
+.names {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.bios {
+
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.hide {
+    display: none;
+}
+
+
 @media screen and (width <= 1064px)  {
 
     .mobile {
@@ -303,8 +263,6 @@ a {
     .desktop {
         display: none;
     }
-    
-   
     
 }
 

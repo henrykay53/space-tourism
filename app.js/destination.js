@@ -199,17 +199,6 @@ fetch("../starter-code/data.json")
         titanContent.classList.add("hide");
         titanContent.classList.remove("show");
 
-    //    if (moonContent.classList.contains("hide")) {
-
-    //     alert(moonContent.classList)
-
-    //     moonContent.classList.add("show");
-    //     marsContent.classList.add("hide");
-    //     titanContent.classList.add("hide");
-    //     europaContent.classList.add("hide");
-        
-    //    };
-
     });
 
     marsLink.addEventListener("click", ()=> {
@@ -224,17 +213,6 @@ fetch("../starter-code/data.json")
         europaContent.classList.remove("show");
         titanContent.classList.add("hide");
         titanContent.classList.remove("show");
-
-    //    if (moonContent.classList.contains("hide")) {
-
-    //     alert(moonContent.classList)
-
-    //     moonContent.classList.add("show");
-    //     marsContent.classList.add("hide");
-    //     titanContent.classList.add("hide");
-    //     europaContent.classList.add("hide");
-        
-    //    };
 
     });
 
@@ -252,16 +230,6 @@ fetch("../starter-code/data.json")
         titanContent.classList.add("hide");
         titanContent.classList.remove("show");
 
-    //    if (moonContent.classList.contains("hide")) {
-
-    //     alert(moonContent.classList)
-
-    //     moonContent.classList.add("show");
-    //     marsContent.classList.add("hide");
-    //     titanContent.classList.add("hide");
-    //     europaContent.classList.add("hide");
-        
-    //    };
 
     });
 
@@ -278,64 +246,11 @@ fetch("../starter-code/data.json")
         titanContent.classList.add("show");
         titanContent.classList.remove("hide");
 
-    //    if (moonContent.classList.contains("hide")) {
-
-    //     alert(moonContent.classList)
-
-    //     moonContent.classList.add("show");
-    //     marsContent.classList.add("hide");
-    //     titanContent.classList.add("hide");
-    //     europaContent.classList.add("hide");
-        
-    //    };
+  
 
     });
 
-    // marsLink.addEventListener("click", ()=> {
-
-    //    if (marsContent.classList.contains("hide")) {
-
-    //     marsContent.classList.remove("hide");
-    //     marsContent.classList.add("show");
-
-    //     moonContent.classList.add("hide");
-    //     titanContent.classList.add("hide");
-    //     europaContent.classList.add("hide");
-        
-    //    };
-
-
-    // });
-
-    // titanLink.addEventListener("click", ()=> {
-
-    //     if (titanContent.classList.contains("hide")) {
- 
-    //      titanContent.classList.remove("hide");
-    //      titanContent.classList.add("show");
- 
-    //      moonContent.classList.add("hide");
-    //      marsContent.classList.add("hide");
-    //      europaContent.classList.add("hide");
-         
-    //     };
- 
-    // });
-
-    // europaLink.addEventListener("click", ()=> {
-
-    //    if (europaContent.classList.contains("hide")) {
-
-    //     europaContent.classList.remove("hide");
-    //     europaContent.classList.add("show");
-
-    //     moonContent.classList.add("hide");
-    //     marsContent.classList.add("hide");
-    //     titanContent.classList.add("hide");
-        
-    //    };
-
-    // });
+    
 
  
 
