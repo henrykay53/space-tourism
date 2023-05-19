@@ -69,6 +69,11 @@ body, html {
 }
 
 
+.techImages {
+    width: 100%;
+}
+
+
 .desktop {
 
     background: url("../assets/technology/background-technology-desktop.jpg");
@@ -119,6 +124,34 @@ li {
 a {
     color: white;
     text-decoration: none;
+}
+
+.indicator {
+    display: flex;
+    gap: 1em;
+}
+
+
+.indicator .grey {
+
+    color: white;
+    padding: 1.6em;
+    border-radius: 50%;
+    border: .1em solid white;
+    background: transparent;
+
+}
+
+.grey:active {
+
+    background: white;
+    color: black;
+
+}
+
+.grey:hover {
+    background: white;
+    color: black;
 }
 
 
