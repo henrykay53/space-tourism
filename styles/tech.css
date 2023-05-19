@@ -11,8 +11,63 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
+}
+
+.mobileFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1em 1em;
+
+}
+
+.show {
+    display: block;
+}
+
+.mobile-menu {
+
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(1, 1, 40);
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.close {
+    padding-right: 2em;
+    padding-top: 2.2em;
+}
+
+.hide { 
     display: none;
 }
+
+.mobile-menu ul li {
+
+    margin-top: 4em;
+    list-style: none;
+    text-align: justify;
+    animation: appear .6s ease-in-out;
+    
+}
+
+@keyframes appear {
+
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+
 
 .desktop {
 
@@ -65,3 +120,35 @@ a {
     color: white;
     text-decoration: none;
 }
+
+
+
+@media screen and (width <= 1064px)  {
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+   
+    
+}
+
+/* Media query for desktop at screen width >= 1065 */
+
+@media screen and (width >= 1065px)  {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+    
+}
+
+
