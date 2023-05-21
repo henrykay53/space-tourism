@@ -58,6 +58,12 @@ body, html {
     
 }
 
+.planet-para-mobile {
+    line-height: 1.6em;
+    text-align: justify;
+
+}
+
 @keyframes appear {
 
     0% {
@@ -70,8 +76,17 @@ body, html {
     
 }
 
+.nameMobile {
+    text-align: center;
 
-.name {
+    text-transform: uppercase;
+    margin-top: -.6em;
+    font-size: 5em;
+ 
+}
+
+
+.nameMobile {
     animation: emerge 2s ease-in;
 }
 
@@ -300,6 +315,8 @@ a {
     align-items: center;
     gap: 10rem;
     margin-top: -4rem;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 

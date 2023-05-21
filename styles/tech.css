@@ -141,6 +141,10 @@ a {
     animation: pageDetail 2s ease-in-out;
 }
 
+/* .desktopDetails {
+    padding-left: 2em;
+} */
+
 .pageNum {
     color: grey;
 }
@@ -193,8 +197,9 @@ a {
     align-items: center;
     gap: 2em;
     margin-top: 5em;
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 30em;
+    padding-right: 22em;
+    overflow: hidden;
   
 }
 
