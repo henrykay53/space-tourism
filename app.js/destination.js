@@ -2,6 +2,8 @@ fetch("../starter-code/data.json")
     .then(res => res.json())
     .then(data => {
 
+        // element creation for desktop
+
         let moon = document.createElement('p');
         let moonDetail = document.createElement('p');
         let moonDistance = document.createElement('p');
@@ -13,6 +15,7 @@ fetch("../starter-code/data.json")
         let moonDistanceMobile = document.createElement('p');
         let moonTimeMobile = document.createElement('p');
 
+        // Creation of the horizontal line that runs under the planet images
         let horizontalLine = document.createElement("hr");
 
 
@@ -28,10 +31,6 @@ fetch("../starter-code/data.json")
         moonDetailMobile.textContent = data.destinations[0].description;
         moonDistanceMobile.textContent = data.destinations[0].distance;
         moonTimeMobile.textContent = data.destinations[0].travel;
-
-
-
-
 
 
         const moonName = document.querySelector('.moon');
@@ -74,22 +73,25 @@ fetch("../starter-code/data.json")
     });
 
 
+    // API call
+
     fetch("../starter-code/data.json")
     .then(res => res.json())
     .then(data => {
 
-
+        // element creation for desktop
         let mars = document.createElement('p');
         let marsDetail = document.createElement('p');
         let marsDistance = document.createElement('p');
         let marsTime = document.createElement('p');
 
-        
+        // element creation for mobile
         let marsMobile = document.createElement('p');
         let marsDetailMobile = document.createElement('p');
         let marsDistanceMobile = document.createElement('p');
         let marsTimeMobile = document.createElement('p');
-        
+
+        // Creation of the horizontal line that runs under the planet images
         let horizontalLine = document.createElement("hr");
 
 
@@ -147,19 +149,20 @@ fetch("../starter-code/data.json")
     .then(res => res.json())
     .then(data => {
 
-
+        // element creation for desktop
         let europa = document.createElement('p');
         let europaDetail = document.createElement('p');
         let europaDistance = document.createElement('p');
         let europaTime = document.createElement('p');
 
-        
+        // element creation for mobile
         let europaMobile = document.createElement('p');
         let europaDetailMobile = document.createElement('p');
         let europaDistanceMobile = document.createElement('p');
         let europaTimeMobile = document.createElement('p');
 
 
+        // Creation of the horizontal line that runs under the planet images
         let horizontalLine = document.createElement("hr");
 
 
@@ -215,12 +218,13 @@ fetch("../starter-code/data.json")
     .then(res => res.json())
     .then(data => {
 
-
+        // element creation for desktop
         let titan = document.createElement('p');
         let titanDetail = document.createElement('p');
         let titanDistance = document.createElement('p');
         let titanTime = document.createElement('p');
 
+        // element creation for mobile
         let titanMobile = document.createElement('p');
         let titanDetailMobile = document.createElement('p');
         let titanDistanceMobile = document.createElement('p');
@@ -228,6 +232,7 @@ fetch("../starter-code/data.json")
 
 
 
+        // Creation of the horizontal line that runs under the planet images
         let horizontalLine = document.createElement("hr");
 
 
@@ -288,13 +293,12 @@ fetch("../starter-code/data.json")
     let titanContent = document.getElementById("titanContent");
 
    
-
-
     let moonLink = document.querySelector(".moon-link");
     let marsLink = document.querySelector(".mars-link");
     let europaLink = document.querySelector(".europa-link");
     let titanLink = document.querySelector(".titan-link");
 
+    // Event listiner to toggle between show and hidden
 
     moonLink.addEventListener("click", ()=> {
        
@@ -312,8 +316,6 @@ fetch("../starter-code/data.json")
 
     marsLink.addEventListener("click", ()=> {
         
-    
-
         moonContent.classList.remove("show");
         moonContent.classList.add("hide")
         marsContent.classList.add("show");
@@ -328,8 +330,6 @@ fetch("../starter-code/data.json")
 
     europaLink.addEventListener("click", ()=> {
         
-      
-
         moonContent.classList.remove("show");
         moonContent.classList.add("hide")
         marsContent.classList.add("hide");
@@ -344,8 +344,6 @@ fetch("../starter-code/data.json")
 
     titanLink.addEventListener("click", ()=> {
         
-        
-
         moonContent.classList.remove("show");
         moonContent.classList.add("hide")
         marsContent.classList.add("hide");
