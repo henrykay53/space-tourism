@@ -63,8 +63,33 @@ body, html {
 }
 
 .crewMobileContent {
-    margin-top: -6em;
+    color: white;
     padding: 0 2em;
+}
+
+.roleMobile {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: grey;
+}
+
+/* .crewImage {
+    
+    margin: 0 auto;
+
+} */
+
+.nameMobile {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.bioMobile {
+
+    line-height: 1.5em;
+    color: grey;
 }
 
 @keyframes appear {
@@ -88,7 +113,7 @@ body, html {
 
 .grey {
     
-    padding: .8em .8em;
+    padding: .2em 1.2em;
     background: grey;
     border: 0 solid transparent;
     border-radius: 2em;
@@ -158,7 +183,6 @@ a {
 
 
 /* Animations */
-
 
 @keyframes emerge {
     0% {
@@ -230,6 +254,16 @@ a {
     margin-top: 2em;
 }
 
+.alignCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.douglas, .mark{
+
+    width: 80%;
+}
+
 .memberInfo {
 
     width: 500px;
@@ -268,7 +302,69 @@ a {
     .desktop {
         display: none;
     }
+}
+
+@media screen and (width >= 1000px) and (width <= 1064px){
+
+    .mobile {
+        height: 1520px;
+    }
+
+}
+
+@media screen and (width >=570px) and (width <= 705px) {
+
+    .mobile {
+        height: 1110px;
+    }
     
+}
+
+@media screen and (width >=706px) and (width <= 801px) {
+
+    .mobile {
+        height: 1200px;
+    }
+    
+}
+
+@media screen and (width >=802px) and (width <= 908px) {
+
+    .mobile {
+        height: 1300px;
+    }
+    
+}
+
+@media screen and (width >=910px) and (width <= 950px) {
+
+    .mobile {
+        height: 1400px;
+    }
+    
+}
+
+@media screen and (width >=951px) and (width <= 980px) {
+
+    .mobile {
+        height: 1450px;
+    }
+    
+}
+
+@media screen and (width >=981px) and (width <= 1064px) {
+
+    .mobile {
+        height: 1500px;
+    }
+    
+}
+
+@media screen and (height <= 820px) {
+
+    .mobile, .mobile-menu {
+        height: 900px;
+    }
 }
 
 /* Media query for desktop at screen width >= 1065 */

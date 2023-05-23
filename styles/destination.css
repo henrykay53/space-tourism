@@ -58,6 +58,8 @@ body, html {
     
 }
 
+
+
 .planet-para-mobile {
     line-height: 1.6em;
     text-align: justify;
@@ -362,7 +364,6 @@ a {
 /* Desktop styling ends here */
 
 
-
 /* Media query for mobile at screen width <= 1064 */
 @media screen and (width <= 1064px)  {
 
@@ -388,6 +389,27 @@ a {
     }
     
 }
+
+@media screen and (width <= 420px) {
+
+    .plant {
+        width: 100%;
+    }
+
+}
+
+@media screen and (height <= 850px) {
+
+    .mobile {
+        height: 900px;
+    }
+
+    .mobile-menu {
+        height: 930px;
+    }
+
+}
+
 
 /* Media query for desktop at screen width >= 1065 */
 

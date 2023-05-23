@@ -6,6 +6,11 @@ fetch("../starter-code/data.json")
         let crewMemberOneR = document.createElement('p');
         let crewMemberOneN = document.createElement('p');
         let crewMemberOneB = document.createElement('p');
+
+        let crewMemberOneRMobile = document.createElement('p');
+        let crewMemberOneNMobile = document.createElement('p');
+        let crewMemberOneBMobile = document.createElement('p');
+
         // let crewOneImg = document.createElement('img');
 
 
@@ -15,9 +20,18 @@ fetch("../starter-code/data.json")
         crewMemberOneB.textContent = data.crew[0].bio;
 
         
+        crewMemberOneRMobile.textContent = data.crew[0].role;
+        crewMemberOneNMobile.textContent = data.crew[0].name;
+        crewMemberOneBMobile.textContent = data.crew[0].bio;
+
+        
         const crewOneRole = document.querySelector(".crewOneRole")
         const crewOneName = document.querySelector('.crewOneName');
         const crewOneBio = document.querySelector(".crewOneBio");
+
+        const crewOneRoleMobile = document.querySelector(".roleOneMobile")
+        const crewOneNameMobile = document.querySelector('.nameOneMobile');
+        const crewOneBioMobile = document.querySelector(".bioOneMobile");
         
    
 
@@ -30,6 +44,10 @@ fetch("../starter-code/data.json")
         elementsAppend(crewOneRole, crewMemberOneR);
         elementsAppend(crewOneName, crewMemberOneN);
         elementsAppend(crewOneBio, crewMemberOneB);
+
+        elementsAppend(crewOneRoleMobile, crewMemberOneRMobile);
+        elementsAppend(crewOneNameMobile, crewMemberOneNMobile);
+        elementsAppend(crewOneBioMobile, crewMemberOneBMobile);
         
     });
 
@@ -43,28 +61,45 @@ fetch("../starter-code/data.json")
         let crewMemberTwoN = document.createElement('p');
         let crewMemberTwoB = document.createElement('p');
 
+        let crewMemberTwoRMobile = document.createElement('p');
+        let crewMemberTwoNMobile = document.createElement('p');
+        let crewMemberTwoBMobile = document.createElement('p');
+
 
 
         crewMemberTwoR.textContent = data.crew[1].role;
         crewMemberTwoN.textContent = data.crew[1].name;
         crewMemberTwoB.textContent = data.crew[1].bio;
 
+        crewMemberTwoRMobile.textContent = data.crew[1].role;
+        crewMemberTwoNMobile.textContent = data.crew[1].name;
+        crewMemberTwoBMobile.textContent = data.crew[1].bio;
+
 
         const crewTwoRole = document.querySelector(".crewTwoRole")
         const crewTwoName = document.querySelector('.crewTwoName');
         const crewTwoBio = document.querySelector(".crewTwoBio");
+
+        const crewTwoRoleMobile = document.querySelector(".roleTwoMobile")
+        const crewTwoNameMobile = document.querySelector('.nameTwoMobile');
+        const crewTwoBioMobile = document.querySelector(".bioTwoMobile");
         
    
 
-        function elementsAppend(targetedElement, chiltToAppend) {
+        function elementsAppend(targetedElement, childToAppend) {
 
-            targetedElement.appendChild(chiltToAppend);
+            targetedElement.appendChild(childToAppend);
         }
 
 
         elementsAppend(crewTwoRole, crewMemberTwoR);
         elementsAppend(crewTwoName, crewMemberTwoN);
         elementsAppend(crewTwoBio, crewMemberTwoB);
+
+
+        elementsAppend(crewTwoRoleMobile, crewMemberTwoRMobile);
+        elementsAppend(crewTwoNameMobile, crewMemberTwoNMobile);
+        elementsAppend(crewTwoBioMobile, crewMemberTwoBMobile);
         
 
 
@@ -81,27 +116,44 @@ fetch("../starter-code/data.json")
         let crewMemberThreeB = document.createElement('p');
 
 
+        let crewMemberThreeRMobile = document.createElement('p');
+        let crewMemberThreeNMobile = document.createElement('p');
+        let crewMemberThreeBMobile = document.createElement('p');
+
+
 
         crewMemberThreeR.textContent = data.crew[2].role;
         crewMemberThreeN.textContent = data.crew[2].name;
         crewMemberThreeB.textContent = data.crew[2].bio;
 
+        crewMemberThreeRMobile.textContent = data.crew[2].role;
+        crewMemberThreeNMobile.textContent = data.crew[2].name;
+        crewMemberThreeBMobile.textContent = data.crew[2].bio;
+
 
         const crewThreeRole = document.querySelector(".crewThreeRole")
         const crewThreeName = document.querySelector('.crewThreeName');
         const crewThreeBio = document.querySelector(".crewThreeBio");
+
+        const crewThreeRoleMobile = document.querySelector(".roleThreeMobile");
+        const crewThreeNameMobile = document.querySelector('.nameThreeMobile');
+        const crewThreeBioMobile = document.querySelector(".bioThreeMobile");
         
    
 
-        function elementsAppend(targetedElement, chiltToAppend) {
+        function elementsAppend(targetedElement, childToAppend) {
 
-            targetedElement.appendChild(chiltToAppend);
+            targetedElement.appendChild(childToAppend);
         }
 
 
         elementsAppend(crewThreeRole, crewMemberThreeR);
         elementsAppend(crewThreeName, crewMemberThreeN);
         elementsAppend(crewThreeBio, crewMemberThreeB);
+
+        elementsAppend(crewThreeRoleMobile, crewMemberThreeRMobile);
+        elementsAppend(crewThreeNameMobile, crewMemberThreeNMobile);
+        elementsAppend(crewThreeBioMobile, crewMemberThreeBMobile);
         
 
 
@@ -117,28 +169,44 @@ fetch("../starter-code/data.json")
         let crewMemberFourN = document.createElement('p');
         let crewMemberFourB = document.createElement('p');
 
+        let crewMemberFourRMobile = document.createElement('p');
+        let crewMemberFourNMobile = document.createElement('p');
+        let crewMemberFourBMobile = document.createElement('p');
+
 
 
         crewMemberFourR.textContent = data.crew[3].role;
         crewMemberFourN.textContent = data.crew[3].name;
         crewMemberFourB.textContent = data.crew[3].bio;
 
+        crewMemberFourRMobile.textContent = data.crew[3].role;
+        crewMemberFourNMobile.textContent = data.crew[3].name;
+        crewMemberFourBMobile.textContent = data.crew[3].bio;
+
 
         const crewFourRole = document.querySelector(".crewFourRole");
         const crewFourName = document.querySelector('.crewFourName');
         const crewFourBio = document.querySelector(".crewFourBio");
+
+        const crewFourRoleMobile = document.querySelector(".roleFourMobile");
+        const crewFourNameMobile = document.querySelector('.nameFourMobile');
+        const crewFourBioMobile = document.querySelector(".bioFourMobile");
         
    
 
-        function elementsAppend(targetedElement, chiltToAppend) {
+        function elementsAppend(targetedElement, childToAppend) {
 
-            targetedElement.appendChild(chiltToAppend);
+            targetedElement.appendChild(childToAppend);
         }
 
 
         elementsAppend(crewFourRole, crewMemberFourR);
         elementsAppend(crewFourName, crewMemberFourN);
         elementsAppend(crewFourBio, crewMemberFourB);
+
+        elementsAppend(crewFourRoleMobile, crewMemberFourRMobile);
+        elementsAppend(crewFourNameMobile, crewMemberFourNMobile);
+        elementsAppend(crewFourBioMobile, crewMemberFourBMobile);
         
 
 
