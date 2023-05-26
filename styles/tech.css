@@ -59,6 +59,10 @@ body, html {
     animation: appear .6s ease-in-out;
 }
 
+.mobileContent {
+    animation: emerge 1s ease-in-out;
+}
+
 .mobilePageTitle {
     color: grey;
     font-size: 1.5em;
@@ -109,6 +113,17 @@ body, html {
 
 .active {
     background-color: grey;
+}
+
+
+@keyframes emerge {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 @keyframes appear {

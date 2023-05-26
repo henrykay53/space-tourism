@@ -70,7 +70,7 @@ body, html {
 .crewMobileContent {
     color: white;
     padding: 0 2em;
-    animation: emerge 2s ease-out;
+    animation: emerge 1s ease-in-out;
 }
 
 @keyframes emerge {
