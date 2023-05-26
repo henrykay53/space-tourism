@@ -87,11 +87,12 @@ body, html {
     display: flex;
     gap: 2em;
     justify-content: center;
+    padding-bottom: 2em;
 }
 
 .grey {
     
-    padding: .2em 1.2em;
+    padding: 1em 1em;
     background: grey;
     border: 0 solid transparent;
     border-radius: 4em;
@@ -187,17 +188,12 @@ a {
 .pageDetails {
     display: flex;
     gap: 2em;
-    /* font-size: 1.3em; */
     word-spacing: .2em;
     letter-spacing: .2em;
     margin-left: 25em;
     margin-top: 5em;
     animation: pageDetail 2s ease-in-out;
 }
-
-/* .desktopDetails {
-    padding-left: 2em;
-} */
 
 .pageNum {
     color: grey;
@@ -292,10 +288,6 @@ a {
     display: none;
 }
 
-.show {
-    display: block;
-}
-
 
 /* media queries */
 
@@ -311,7 +303,64 @@ a {
       
 }
 
-@media screen and (height <= 820px) {
+
+@media screen and (width >= 1000px) and (width <= 1064px){
+
+    .mobile {
+        height: 1520px;
+    }
+
+}
+
+@media screen and (width >=570px) and (width <= 705px) {
+
+    .mobile {
+        height: 1110px;
+    }
+    
+}
+
+@media screen and (width >=706px) and (width <= 801px) {
+
+    .mobile {
+        height: 1200px;
+    }
+    
+}
+
+@media screen and (width >=802px) and (width <= 908px) {
+
+    .mobile {
+        height: 1300px;
+    }
+    
+}
+
+@media screen and (width >=910px) and (width <= 950px) {
+
+    .mobile {
+        height: 1400px;
+    }
+    
+}
+
+@media screen and (width >=951px) and (width <= 980px) {
+
+    .mobile {
+        height: 1450px;
+    }
+    
+}
+
+@media screen and (width >=981px) and (width <= 1064px) {
+
+    .mobile {
+        height: 1500px;
+    }
+    
+}
+
+@media screen and (height <= 850px) {
 
     .mobile, .mobile-menu {
         height: 900px !important;
@@ -319,16 +368,6 @@ a {
     
 }
 
-/* @media screen and (width >= 500px) and (width <= 1063px) {
-
-    .mobile {
-        background:url("../assets/technology/background-technology-tablet.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-    }
-} */
 
 /* Media query for desktop at screen width >= 1065 */
 

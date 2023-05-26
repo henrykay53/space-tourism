@@ -58,8 +58,6 @@ body, html {
     
 }
 
-
-
 .planet-para-mobile {
     line-height: 1.6em;
     text-align: justify;
@@ -73,7 +71,6 @@ body, html {
     font-size: 5em;
  
 }
-
 
 .nameMobile {
     animation: emerge 2s ease-in;
@@ -96,11 +93,12 @@ body, html {
     display: flex;
     gap: 2em;
     justify-content: center;
+    padding-bottom: 2em;
 }
 
 .grey {
     
-    padding: .2em 1.2em;
+    padding: 1em 1em;
     background: grey;
     border: 0 solid transparent;
     border-radius: 4em;
@@ -126,11 +124,11 @@ body, html {
     text-align: center;
 }
 
-.mars-content {
+.planet-content {
     line-height: 2em;
     text-align: center;
     margin-top: 2em;
-    animation: appear 2s;
+    animation: emerge 1s ease-out;
 }
 
 
@@ -138,17 +136,16 @@ body, html {
 .avg-distance, .est-time {
     font-size: .6em;
     color: grey;
-    animation: appearLeft .6s ease-in;
+    /* animation: appearLeft .6s ease-in; */
 }
 
 .figure {
     font-size: 1.5em;
     margin-top: -.8em;
+    animation: appear 1s ease-in-out;
 }
 
-.figure {
-    animation: appearRight .6s ease-in;
-}
+
 
 /* Animations */
 
@@ -236,12 +233,12 @@ li {
     word-spacing: .4em;
 }
 
-.link:hover::before {
+.link:hover::after {
 
     content: " ";
     position: relative;
     display: block;
-    top: 3em;
+    top: 2em;
     height: 2px;
     background-color: white;
     
@@ -398,16 +395,13 @@ a {
 
 }
 
-@media screen and (height <= 850px) {
+@media screen and (height <= 1000px) {
 
-    .mobile {
-        height: 900px;
+    .mobile, .mobile-menu {
+        height: 1100px;
     }
 
-    .mobile-menu {
-        height: 930px;
-    }
-
+  
 }
 
 

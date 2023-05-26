@@ -66,6 +66,17 @@ body, html {
 .crewMobileContent {
     color: white;
     padding: 0 2em;
+    animation: emerge 2s ease-out;
+}
+
+@keyframes emerge {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .roleMobile {
@@ -114,7 +125,7 @@ body, html {
 
 .grey {
     
-    padding: .2em 1.2em;
+    padding: 1em 1em;
     background: grey;
     border: 0 solid transparent;
     border-radius: 2em;
@@ -293,6 +304,10 @@ a {
     display: none;
 }
 
+.active {
+    background-color: white;
+}
+
 
 @media screen and (width <= 1064px)  {
 
@@ -305,7 +320,7 @@ a {
     }
 }
 
-@media screen and (width >= 1000px) and (width <= 1064px){
+ @media screen and (width >= 1000px) and (width <= 1064px){
 
     .mobile {
         height: 1520px;
@@ -361,7 +376,15 @@ a {
     
 }
 
-@media screen and (height <= 820px) {
+@media screen and (width <= 450px) {
+
+    .mobile {
+        height: 900px;
+    }
+    
+} 
+
+/* @media screen and (height <= 1000px) {
 
     .mobile, .mobile-menu {
         height: 900px;
@@ -381,6 +404,7 @@ a {
     }
     
 }
+
 
 
 

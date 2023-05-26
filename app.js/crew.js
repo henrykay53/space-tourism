@@ -320,3 +320,111 @@ fetch("../starter-code/data.json")
     })
 
 
+    let buttonOne = document.getElementById("buttonOne");
+    let buttonTwo = document.getElementById("buttonTwo");
+    let buttonThree = document.getElementById("buttonThree");
+    let buttonFour = document.getElementById("buttonFour");
+
+
+    let crewMemberOne = document.querySelector(".crewMemberOne");
+    let crewMemberTwo = document.querySelector(".crewMemberTwo");
+    let crewMemberThree = document.querySelector(".crewMemberThree");
+    let crewMemberFour = document.querySelector(".crewMemberFour");
+
+    buttonOne.addEventListener("click", ()=> {
+
+        buttonOne.classList.add("active");
+        buttonTwo.classList.remove("active");
+        buttonThree.classList.remove("active");
+        buttonFour.classList.remove("active");
+
+       
+
+
+        crewMemberOne.classList.remove("hide");
+        crewMemberOne.classList.add("show");
+
+        crewMemberTwo.classList.remove("show");
+        crewMemberTwo.classList.add("hide");
+
+        crewMemberThree.classList.remove("show");
+        crewMemberThree.classList.add("hide");
+
+        crewMemberFour.classList.remove("show");
+        crewMemberFour.classList.add("hide");
+    })
+
+
+    buttonTwo.addEventListener("click", ()=> {
+
+        buttonOne.classList.remove("active");
+        buttonTwo.classList.add("active");
+        buttonThree.classList.remove("active");
+        buttonFour.classList.remove("active");
+
+
+
+        crewMemberOne.classList.remove("show");
+        crewMemberOne.classList.add("hide");
+
+        crewMemberTwo.classList.remove("hide");
+        crewMemberTwo.classList.add("show");
+
+        crewMemberThree.classList.remove("show");
+        crewMemberThree.classList.add("hide");
+
+        crewMemberFour.classList.remove("show");
+        crewMemberFour.classList.add("hide");
+    })
+
+
+    buttonThree.addEventListener("click", ()=> {
+
+        buttonOne.classList.remove("active");
+        buttonTwo.classList.remove("active");
+        buttonThree.classList.add("active");
+        buttonFour.classList.remove("active");
+
+        
+        
+
+        crewMemberOne.classList.remove("show");
+        crewMemberOne.classList.add("hide");
+
+        crewMemberTwo.classList.remove("show");
+        crewMemberTwo.classList.add("hide");
+
+        crewMemberThree.classList.remove("hide");
+        crewMemberThree.classList.add("show");
+
+        crewMemberFour.classList.remove("show");
+        crewMemberFour.classList.add("hide");
+    })
+
+
+    buttonFour.addEventListener("click", ()=> {
+
+        buttonOne.classList.remove("active");
+        buttonTwo.classList.remove("active");
+        buttonThree.classList.remove("active");
+        buttonFour.classList.add("active");
+
+        
+        
+
+        crewMemberOne.classList.remove("show");
+        crewMemberOne.classList.add("hide");
+
+        crewMemberTwo.classList.remove("show");
+        crewMemberTwo.classList.add("hide");
+
+        crewMemberThree.classList.remove("show");
+        crewMemberThree.classList.add("hide");
+
+        crewMemberFour.classList.remove("hide");
+        crewMemberFour.classList.add("show");
+    })
+
+
+
+
