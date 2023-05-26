@@ -44,6 +44,10 @@ body, html {
     width: 100%;
 }
 
+.noscroll {
+    position: fixed;
+}
+
 .close {
 
     padding-right: 2em;
@@ -384,11 +388,13 @@ a {
     
 } 
 
-/* @media screen and (height <= 1000px) {
+ @media screen and (height <= 850px) {
 
-    .mobile, .mobile-menu {
+    .mobile {
         height: 900px;
     }
+
+   
 }
 
 /* Media query for desktop at screen width >= 1065 */

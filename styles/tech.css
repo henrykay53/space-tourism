@@ -36,6 +36,10 @@ body, html {
     width: 100%;
 }
 
+.noscroll {
+    position: fixed;
+}
+
 
 .close {
 
@@ -362,9 +366,11 @@ a {
 
 @media screen and (height <= 850px) {
 
-    .mobile, .mobile-menu {
-        height: 900px !important;
+    .mobile{
+        height: 1200px;
     }
+
+  
     
 }
 

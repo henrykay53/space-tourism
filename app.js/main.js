@@ -2,7 +2,7 @@ let hamOpen = document.getElementById("Open");
 let hamClose =  document.getElementById("Close");
 
 let mobileMenu = document.getElementById("mobileMenu");
-// let body = document.body;
+let body = document.body;
 
 
 hamOpen.addEventListener("click", ()=>  {
@@ -11,7 +11,7 @@ hamOpen.addEventListener("click", ()=>  {
 
         mobileMenu.classList.remove("hide");
         mobileMenu.classList.add("show");
-        // body.classList.add("noscroll")
+        body.classList.add("noscroll")
 
         hamClose.addEventListener("click", ()=> {
 
@@ -20,7 +20,7 @@ hamOpen.addEventListener("click", ()=>  {
 
                 mobileMenu.classList.remove("show");
                 mobileMenu.classList.add("hide");
-                // body.classList.remove("noscroll");
+                body.classList.remove("noscroll");
 
             }
         })
