@@ -36,10 +36,13 @@ body, html {
     width: 100%;
 }
 
+
 .close {
+
     padding-right: 2em;
     padding-top: 2.2em;
 }
+
 
 .hide { 
     display: none;
@@ -50,6 +53,57 @@ body, html {
     list-style: none;
     text-align: justify;
     animation: appear .6s ease-in-out;
+}
+
+.mobilePageTitle {
+    color: grey;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-inline: 1em;
+   
+}
+
+
+.techDetailsMobile {
+    line-height: 1.5em;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+
+.description {
+    padding-inline: 1em;
+    color: grey;
+    text-align: center;
+}
+
+
+.indicatorMobile {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.grey {
+    
+    padding: .2em 1.2em;
+    background: grey;
+    border: 0 solid transparent;
+    border-radius: 4em;
+    margin-top: 1.2em;
+}
+
+.grey:hover {
+    background: white;
+}
+
+.active {
+    background-color: grey;
 }
 
 @keyframes appear {
@@ -238,6 +292,10 @@ a {
     display: none;
 }
 
+.show {
+    display: block;
+}
+
 
 /* media queries */
 
@@ -252,6 +310,25 @@ a {
     }
       
 }
+
+@media screen and (height <= 820px) {
+
+    .mobile, .mobile-menu {
+        height: 900px !important;
+    }
+    
+}
+
+/* @media screen and (width >= 500px) and (width <= 1063px) {
+
+    .mobile {
+        background:url("../assets/technology/background-technology-tablet.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+} */
 
 /* Media query for desktop at screen width >= 1065 */
 
