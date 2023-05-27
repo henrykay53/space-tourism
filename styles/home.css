@@ -1,6 +1,6 @@
-@font-face {
-    font-family: 'Lawrence', sans-serif;
-    src: url(./fonts/OPTILawrence.otf);
+body {
+
+    font-family: 'Inter', sans-serif;
 }
 
 body, html { 

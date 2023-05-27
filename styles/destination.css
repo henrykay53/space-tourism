@@ -5,6 +5,11 @@ body, html {
     color: white;
 }
 
+body {
+
+    font-family: 'Inter', sans-serif;
+}
+
 .mobile-background {
 
     background: url("../assets/destination/background-destination-mobile.jpg");

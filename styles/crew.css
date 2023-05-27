@@ -3,9 +3,9 @@ body, html {
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Lawrence', sans-serif;
-    src: url(./fonts/OPTILawrence.otf);
+body {
+
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -15,16 +15,13 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-
 }
-
 
 .mobileFlex {
     display: flex;
     justify-content: space-between;
     align-items: center; 
     padding: 1em 1em;
-
 }
 
 .show {
