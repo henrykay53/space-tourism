@@ -193,13 +193,13 @@ li {
     align-items: center;
 }
 
-.link:hover::before {
+.link:hover::after {
 
     content: " ";
     position: relative;
     display: block;
-    top: 3em;
-    height: 2px;
+    top: 2em;
+    height: 1px;
     background-color: white;
 }
 
