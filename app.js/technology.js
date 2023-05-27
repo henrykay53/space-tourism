@@ -131,9 +131,9 @@ fetch("../starter-code/data.json")
     });
 
 
-    let techOne = document.getElementById('techOne');
-    let techTwo = document.getElementById('techTwo');
-    let techThree = document.getElementById('techThree');
+    let desktopButtonOne = document.getElementById('desktopButtonOne');
+    let desktopButtonTwo = document.getElementById('desktopButtonTwo');
+    let desktopButtonThree = document.getElementById('desktopButtonThree');
 
     let mobileBtnOne = document.getElementById('buttonOne');
     let mobileBtnTwo = document.getElementById('buttonTwo');
@@ -150,11 +150,11 @@ fetch("../starter-code/data.json")
     let techTwoMobileContent = document.querySelector(".techTwoMobileContent")
     let techThreeMobileContent = document.querySelector(".techThreeMobileContent")
 
-    techOne.addEventListener("click", ()=> {
+    desktopButtonOne.addEventListener("click", ()=> {
 
-        techOne.classList.add("active");
-        techTwo.classList.remove("active");
-        techThree.classList.remove("active");
+        desktopButtonOne.classList.add("active");
+        desktopButtonTwo.classList.remove("active");
+        desktopButtonThree.classList.remove("active");
 
 
         techContentOne.classList.remove("hide");
@@ -172,11 +172,11 @@ fetch("../starter-code/data.json")
 
  
 
-    techTwo.addEventListener("click", ()=> {
+    desktopButtonTwo.addEventListener("click", ()=> {
 
-        techOne.classList.remove("active");
-        techTwo.classList.add("active");
-        techThree.classList.remove("active");
+        desktopButtonOne.classList.remove("active");
+        desktopButtonTwo.classList.add("active");
+        desktopButtonThree.classList.remove("active");
 
 
         techContentOne.classList.remove("show");
@@ -192,11 +192,11 @@ fetch("../starter-code/data.json")
         
     })
 
-    techThree.addEventListener("click", ()=> {
+    desktopButtonThree.addEventListener("click", ()=> {
 
-        techOne.classList.remove("active");
-        techTwo.classList.remove("active");
-        techThree.classList.add("active");
+        desktopButtonOne.classList.remove("active");
+        desktopButtonTwo.classList.remove("active");
+        desktopButtonThree.classList.add("active");
 
 
         techContentOne.classList.remove("show");

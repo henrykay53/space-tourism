@@ -90,11 +90,7 @@ body, html {
     color: grey;
 }
 
-/* .crewImage {
-    
-    margin: 0 auto;
 
-} */
 
 .nameMobile {
     text-align: center;
@@ -241,7 +237,7 @@ a {
 }
 
 .crewImg {
-    animation: imageAnimation .6s ease-out;
+    animation: imageAnimation .6s ease-in-out;
 }
 
 .pageDetail {
@@ -250,7 +246,7 @@ a {
     gap: 1em;
     word-spacing: 1em;
     margin-top: 10em;
-    animation: pageDetail .8s ease-out;
+    animation: pageDetail .8s ease-in-out;
 }
 
 .num {

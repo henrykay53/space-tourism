@@ -145,7 +145,7 @@ body, html {
 .figure {
     font-size: 1.5em;
     margin-top: -.8em;
-    animation: appear 1s ease-in-out;
+    animation: appearLeft .6s ease-in-out;
 }
 
 
@@ -162,7 +162,7 @@ body, html {
     }
 }
 
-@keyframes appear {
+@keyframes appearLeft {
 
     0% {
         transform: translateX(-200px);
@@ -315,6 +315,7 @@ a {
     font-size: 5em;
  
 }
+
 .desktop-planet-para {
     max-width: 500px;
     margin-top: -3em;
@@ -336,7 +337,7 @@ a {
     gap: 9em;
     color: silver;
     padding-top: 1em;
-    animation: emerge 2s ease-out;
+    animation: emerge 1s ease-in-out;
   
 }
 
