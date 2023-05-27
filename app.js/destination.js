@@ -357,6 +357,103 @@ fetch("../starter-code/data.json")
 
     });
 
+
+    let buttonOne = document.getElementById("buttonOne");
+    let buttonTwo = document.getElementById("buttonTwo");
+    let buttonThree = document.getElementById("buttonThree");
+    let buttonFour = document.getElementById("buttonFour");
+
+
+    let planetContentOne = document.querySelector(".planetContentOne");
+    let planetContentTwo = document.querySelector(".planetContentTwo");
+    let planetContentThree = document.querySelector(".planetContentThree");
+    let planetContentFour = document.querySelector(".planetContentFour");
+
+
+    buttonOne.addEventListener("click", ()=> {
+
+        planetContentOne.classList.add("show");
+        planetContentOne.classList.remove("hide");
+
+
+        planetContentTwo.classList.add("hide");
+        planetContentTwo.classList.remove("remove");
+
+
+        planetContentThree.classList.add("hide");
+        planetContentThree.classList.remove("remove");
+
+
+        planetContentFour.classList.add("hide");
+        planetContentFour.classList.remove("remove");
+
+
+    })
+
+    buttonTwo.addEventListener("click", ()=> {
+
+        planetContentOne.classList.add("hide");
+        planetContentOne.classList.remove("show");
+
+
+        planetContentTwo.classList.add("show");
+        planetContentTwo.classList.remove("hide");
+
+
+        planetContentThree.classList.add("hide");
+        planetContentThree.classList.remove("remove");
+
+
+        planetContentFour.classList.add("hide");
+        planetContentFour.classList.remove("remove");
+
+
+    })
+
+
+    buttonThree.addEventListener("click", ()=> {
+
+        planetContentOne.classList.add("hide");
+        planetContentOne.classList.remove("remove");
+
+
+        planetContentTwo.classList.add("hide");
+        planetContentTwo.classList.remove("remove");
+
+
+        planetContentThree.classList.add("show");
+        planetContentThree.classList.remove("hide");
+
+
+        planetContentFour.classList.add("hide");
+        planetContentFour.classList.remove("remove");
+
+
+    })
+
+
+    buttonFour.addEventListener("click", ()=> {
+
+        planetContentOne.classList.add("hide");
+        planetContentOne.classList.remove("show");
+
+
+        planetContentTwo.classList.add("hide");
+        planetContentTwo.classList.remove("remove");
+
+
+        planetContentThree.classList.add("hide");
+        planetContentThree.classList.remove("remove");
+
+
+        planetContentFour.classList.add("show");
+        planetContentFour.classList.remove("hide");
+
+
+    })
+
+
+
     
 
  

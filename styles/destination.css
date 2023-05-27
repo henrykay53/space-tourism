@@ -140,7 +140,6 @@ body, html {
 .avg-distance, .est-time {
     font-size: .6em;
     color: grey;
-    /* animation: appearLeft .6s ease-in; */
 }
 
 .figure {
@@ -393,7 +392,7 @@ a {
 
 @media screen and (width <= 420px) {
 
-    .plant {
+    .planetImg {
         width: 100%;
     }
 
