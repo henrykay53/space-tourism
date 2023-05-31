@@ -1,6 +1,8 @@
 body {
 
     font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: white;
 }
 
 body, html { 
@@ -9,9 +11,7 @@ body, html {
     margin: 0;
 }
 
-body {
-    text-align: center;
-}
+
 
 
 /* Mobile styling starts here */
