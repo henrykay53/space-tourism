@@ -198,7 +198,7 @@ li {
     content: " ";
     position: relative;
     display: block;
-    top: 2em;
+    top: 1.9em;
     height: 1px;
     background-color: white;
 }

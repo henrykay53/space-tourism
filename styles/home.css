@@ -165,18 +165,6 @@ li {
     padding-top: 1em;
 }
 
-
-.link:hover::after {
-
-    content: " ";
-    position: relative;
-    display: block;
-    top: 2em;
-    height: 1px;
-    background-color: white;
-    
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -232,7 +220,7 @@ a {
     position: relative;
     display: block;
     top: 2.7em;
-    height: 2px;
+    height: 1px;
     background-color: white;
     
 }
